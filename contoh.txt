@@ -1,0 +1,23 @@
+FullPageHTML:
+
+<flowise-fullchatbot></flowise-fullchatbot>
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/gh/agamfujakurniawan/FlowiseChatEmbed@latest/dist/web.js"
+    Chatbot.initFull({
+        chatflowid: "78212eed-f020-4310-b2a9-e1385e9797c9",
+        apiHost: "https://ai.hegira.co.id",
+    })
+</script>
+
+
+PopUp HTML:
+
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/gh/agamfujakurniawan/FlowiseChatEmbed@latest/dist/web.js"
+    Chatbot.init({
+        chatflowid: "78212eed-f020-4310-b2a9-e1385e9797c9",
+        apiHost: "https://ai.hegira.co.id",
+    })
+</script>
+
+
