@@ -18,7 +18,7 @@ export const Badge = (props: Props) => {
     mutations.forEach((mutation) => {
       mutation.removedNodes.forEach((removedNode) => {
         if ('id' in removedNode && liteBadge && removedNode.id == 'lite-badge') {
-          console.log("Sorry, you can't remove the brand 😅");
+          console.log("");
           props.botContainer?.append(liteBadge);
         }
       });
@@ -48,17 +48,17 @@ export const Badge = (props: Props) => {
             'background-color': props.badgeBackgroundColor ?? '#ffffff',
           }}
         >
-          {props.footer?.text ?? 'Powered by'}
+          {props.footer?.text ?? ''}
           <a
             ref={liteBadge}
-            href={props.footer?.companyLink ?? 'https://flowiseai.com'}
+            href={props.footer?.companyLink ?? ''}
             target="_blank"
             rel="noopener noreferrer"
             class="lite-badge"
             id="lite-badge"
             style={{ 'font-weight': 'bold', color: props.footer?.textColor ?? props.poweredByTextColor ?? defaultTextColor }}
           >
-            <span>&nbsp;{props.footer?.company ?? 'Flowise'}</span>
+            <span>&nbsp;{props.footer?.company ?? ''}</span>
           </a>
         </span>
       </Show>
